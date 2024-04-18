@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Barry's Dining</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Set font-family to Comic Sans Pro */
+        body, h1, h2, h3, h4, h5, h6, p, a, li, span {
+            font-family: 'Comic Sans Pro', sans-serif !important;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 750px; /* Adjusted height for barryimage1 */
+        }
+
+        .book-button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .book-button-container a {
+            width: 300px;
+            height: 150px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Make text white */
+        }
+
+        .navbar-brand img {
+            max-height: 60px; /* Adjust the height as needed */
+            margin-right: 10px; /* Add some spacing between the logo and text */
+        }
+
+        .dish-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid white; /* Add white border */
+        }
+
+        /* Custom CSS to move images */
+        @media (min-width: 992px) { /* Adjust this breakpoint as needed */
+            .move-left {
+                margin-left: -400px;
+            }
+            .move-right {
+                margin-right: -400px;
+            }
+        }
+
+        /* Added CSS for rose background */
+        .rose-background {
+            background-color: #E3242B;
+            padding: 50px 0;
+        }
+
+        .rose-background h2,
+        .rose-background h4,
+        .rose-background p {
+            color: white; /* Make text white */
+        }
+
+        /* Added CSS for video player */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Added CSS for footer */
+        .footer {
+            background-color: #E3242B;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; /* Make text white */
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            max-height: 40px; /* Adjust the height as needed */
+            margin-right: 10px; /* Add some spacing between the logo and text */
+        }
+
+        /* Added CSS for white line */
+        .white-line {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        /* Added CSS for black background */
+        .black-background {
+            background-color: black;
+            padding: 20px 0;
+        }
+
+        /* Added CSS for small logo images */
+        .small-logo {
+            margin: 10px; /* Adjust spacing */
+        }
+
+        .small-logo img {
+            width: 50px; /* Adjust width */
+            height: 50px; /* Adjust height */
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col-lg-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="barrylogo2.png" alt="Barry's Logo" style="width: 50px;"> <!-- Adjusted width -->
+                        Barry's Dining
+                    </a>
+                </div>
+                <div class="col-lg text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-lg-auto collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="BarrysDining.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+						  <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningMenu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningContact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningBooking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningHistory.html">History</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="image-container">
+        <img src="barryimage1.jpg" class="img-fluid" alt="Stretching Image">
+        <div class="book-button-container">
+            <a href="BarryDiningBooking.html" class="btn btn-primary">BOOK HERE</a>
+        </div>
+    </div>
+
+    <div class="rose-background">
+        <div class="container mt-5">
+            <h2 class="text-center">Our Dishes</h2> <!-- Subheading -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-4 text-center move-left">
+                    <img src="sirloin.jpg" alt="food near me" class="dish-image">
+                    <h4 class="mt-2">Dish 1</h4>
+                    <p>This fine dining sirloin steak is definitely worth a try. Its flavor and tenderness are top-notch, making it a standout dish. With every bite, you can truly appreciate the quality and delicacy of the meat. If you're looking for a satisfying meal that hits all the right notes, this sirloin steak won't disappoint.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="porkchop.jpg" alt="restaurants near me" class="dish-image">
+                    <h4 class="mt-2">Dish 2</h4>
+                    <p>Made by Waterford's talented chefs, this pork chop is simply irresistible. Cooked to perfection, it boasts a delightful combination of flavors that will tantalize your taste buds. The presentation is equally impressive, with careful attention to detail that enhances the overall dining experience. If you're in the mood for a mouth-watering delight, this pork chop is sure to hit the spot.</p>
+                </div>
+                <div class="col-md-4 text-center move-right">
+                    <img src="ratat.jpg" alt="Ratatouille" class="dish-image">
+                    <h4 class="mt-2">Dish 3</h4>
+                    <p>This ratatouille, made with care as a vegan option, is bursting with delicious flavors that are sure to please your palate. Each bite offers a delightful medley of vegetables, perfectly seasoned and cooked to perfection. It's a savory dish that stands out for its simplicity and yet offers a truly satisfying dining experience. If you're looking for a flavorful and wholesome meal, this ratatouille is an excellent choice.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h2>About Barry's Dining</h2>
+                    <p>Barry's Dining is a premier dining experience located in the heart of Waterford. Our restaurant offers a diverse menu featuring locally sourced ingredients prepared by our team of expert chefs. We are committed to providing exceptional service and creating unforgettable dining experiences for our guests.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=32T8Oja5Yn4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- White Line -->
+    <div class="white-line"></div>
+
+    <!-- Black Background -->
+    <div class="black-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <img src="barrylogo2.png" alt="Barry's Logo" style="width: 40px;"> <!-- Adjusted width -->
+                        <h4 style="color: white;">Barry's Dining</h4> <!-- White text -->
+                    </div>
+                </div>
+                <div class="col-md-3 text-right">
+                    <p style="color: white;">Contact: +353 123 4567</p> <!-- White text --> <!-- Fake Irish phone number -->
+                </div>
+                <div class="col-md-3 text-right">
+                    <img src="fb.png" alt="Logo 1" class="small-logo">
+                    <img src="insta.png" alt="Logo 2" class="small-logo">
+                    <img src="Xlogo.png" alt="Logo 3" class="small-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

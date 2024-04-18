@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Barry's Dining</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Set font-family to Comic Sans Pro */
+        body, h1, h2, h3, h4, h5, h6, p, a, li, span {
+            font-family: 'Comic Sans Pro', sans-serif !important;
+        }
+        /* Additional CSS specific to the booking page */
+        .book-now-container {
+            border: 2px solid #000; /* Border color */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            height: 300px; /* Set the height of the map */
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+		.footer {
+            background-color: #E3242B;
+            color: white;
+            padding: 20px 0;
+        }
+        /* Added CSS for white line */
+        .white-line {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        /* Added CSS for black background */
+        .black-background {
+            background-color: black;
+            padding: 20px 0;
+        }
+        /* Added CSS for small logo images */
+        .small-logo {
+            margin: 10px; /* Adjust spacing */
+        }
+
+        .small-logo img {
+            width: 50px; /* Adjust width */
+            height: 50px; /* Adjust height */
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; /* Make text white */
+        }
+        /* Added CSS for image */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 500px;
+            height: 250px;
+            object-fit: cover;
+        }
+        /* Adjusted CSS for subheadings */
+        .subheadings {
+            text-align: center;
+            margin-top: -250px; /* Adjusted margin to move the subheadings up */
+        }
+
+        .subheadings h4 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col-lg-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="barrylogo2.png" alt="Barry's Logo" style="width: 50px;"> <!-- Adjusted width -->
+                        Barry's Dining
+                    </a>
+                </div>
+                <div class="col-lg text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-lg-auto collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+			            <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningMenu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningContact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningBooking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BarryDiningHistory.html">History</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content section for Booking -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book-now-container">
+                    <h3>Book Now</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="people">Number of People</label>
+                            <input type="number" class="form-control" id="people" placeholder="Enter number of people">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Image section -->
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="finedine.jpg" alt="Your Image">
+                </div>
+                <div class="subheadings">
+                    <h4>Phone</h4>
+                    <p>+353 123 4567</p>
+                    <h4>Email</h4>
+                    <p>BarrysDiningWaterford@gmail.com</p>
+                    <h4>Address</h4>
+                    <p>Fake Address, Waterford</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="info-section">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.949422011979!2d-7.111838384464755!3d52.259319361573536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842e9948c27e447%3A0xc10a2b01fdaa740!2sWaterford%2C%20Ireland!5e0!3m2!1sen!2sus!4v1614310048651!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Black Background -->
+    <div class="black-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <img src="barrylogo2.png" alt="Barry's Logo" style="width: 40px;"> <!-- Adjusted width -->
+                        <h4 style="color: white;">Barry's Dining</h4> <!-- White text -->
+                    </div>
+                </div>
+                <div class="col-md-3 text-right">
+                    <p style="color: white;">Contact: +353 123 4567</p> <!-- White text --> <!-- Fake Irish phone number -->
+                </div>
+                <div class="col-md-3 text-right">
+                    <img src="fb.png" alt="Logo 1" class="small-logo">
+                    <img src="insta.png" alt="Logo 2" class="small-logo">
+                    <img src="Xlogo.png" alt="Logo 3" class="small-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
